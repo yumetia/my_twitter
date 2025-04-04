@@ -1,0 +1,108 @@
+
+/* channels */
+.channels-col{
+    border-right: 1px solid #e1e8ed;
+    margin-left: 0;
+    padding: 5%;
+}
+.channels-col input {
+    width: 100%;
+}
+.channels-col h2{
+    text-align: center;
+    font-size:xx-large;
+}
+
+
+/* conversation */
+
+.conversation-col{
+    border-right: 1px solid #e1e8ed;
+}
+
+.conversation-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: calc(100vh - 150px);
+}
+
+/* message */
+
+.message {
+    max-width: 70%;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.message.received {
+    align-self: flex-start;
+    background: #f1f1f1;
+    color: #333;
+    border-top-left-radius: 5px;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background: #1da1f2;
+    color: white;
+    border-top-right-radius: 5px;
+}
+
+.message-author {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.message-created_at{
+    font-size: 9px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+
+/* Scrollbar custom */
+.conversation-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.conversation-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.conversation-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* contacts */
+.contact-item{
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 2%;
+    background-color: #1da1f2;
+    border-radius: 10%;
+    border: 1px solid;
+    transition: background-color 0.7s ease;
+}
+.contact-item a {
+    color: #e1e8ed;
+    text-decoration: none;
+}
+.contact-item:hover{
+    background-color: #105e8f;
+}

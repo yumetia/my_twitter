@@ -1,0 +1,102 @@
+span{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    z-index: 999;
+}
+#popup button {
+    margin-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.edit__header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit__pp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edit__infosProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit-profile__item{
+    max-width: 90%;
+}
+.edit-banner__item{
+    max-width: 90%;
+}
+
+/* retweet popup */
+
+#retweet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#retweet-popup {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    border: 0.3rem solid;
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+}
+
+#retweet-popup h3 {
+    margin-top: 0;
+}
+
+#retweet-popup textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#retweet-popup .btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#retweet-popup .btn-container button {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#retweet-popup .btn-container button:last-child {
+    margin-right: 0;
+}

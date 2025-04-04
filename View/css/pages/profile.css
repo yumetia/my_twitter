@@ -1,0 +1,113 @@
+
+
+
+.profile-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.profile-banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+.profile-pic-container {
+  position: absolute;
+  height: 80px;
+  top: 30px;
+  left: 20px;
+  z-index: 5;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.profile-pic {
+  max-width: 60px;
+  max-height: 90px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  opacity: 0.75;
+}
+
+
+.profile-info {
+  margin-bottom: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1e8ed;
+}
+.profile-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-left: 2%;
+}
+
+
+.profile-info-left h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.created_at {
+  color: purple;
+  font-size: 14px;
+  margin: 0;
+}
+
+.bio {
+  margin: 0;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #333;
+}
+
+.edit-profile-btn {
+  font-size: 14px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-profile-btn:hover {
+  background-color: #0d8bec;
+}
+
+.save,.close{
+  color: whitesmoke;
+  background-color: #e60000;
+  transition: background-color 0.7s ease;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+.save:hover,
+.close:hover{
+  background-color: #c10a0a;
+}
+
+

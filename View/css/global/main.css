@@ -1,0 +1,135 @@
+.title-content {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: -5px;
+}
+
+.trending-col {
+    border-left: 1px solid #e1e8ed;
+    padding: 20px;
+}
+
+.tweet {
+    border-bottom: 1px solid #e1e8ed;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    cursor: pointer;
+}
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.tweet p {
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.tweet-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+    background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tweet-btn:hover {
+  background-color: #0d8bde;
+}
+
+.tweet-comments-btn{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+/* profile header post tweet */
+
+.tweet-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.tweet-box img {
+    border: 1px solid;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: opacity 0.7s ease;
+}
+.tweet-box img:hover{
+    opacity: 0.8;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 7%;
+    border: 1px solid #e1e8ed;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.tweets h3 {
+    margin: 20px 0;
+    border-bottom: 1px solid #e1e8ed;
+    text-align: center;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon i {
+    margin-right: 15px;
+    padding: 10px;
+}
+.icon i:hover {
+    background-color: gray;
+    border-radius: 50%;
+    color: rgb(111, 255, 0);
+    cursor: pointer;
+}
+
+
+/* Comments style */
+
+.comment-interface-block{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.commentInterface__container {
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.commentInterface__answer-input {
+    margin-top: 2%;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.liked{
+    color: red;
+}
+
